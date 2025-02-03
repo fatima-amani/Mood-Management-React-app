@@ -3,7 +3,7 @@ import MoodList from "./MoodList";
 import { useState } from "react";
 
 export default function Home() {
-  let [tab, setTab] = useState();
+  let [tab, setTab] = useState("moodListTab");
   const [list, setList] = useState([]);
 
   let setMoodList = (newList) => {
@@ -24,7 +24,7 @@ export default function Home() {
       {tab === "moodListTab" ? (
         <MoodList list={list} setList={setMoodList} />
       ) : (
-        <MoodAnalytics />
+        <MoodAnalytics list={list}/>
       )}
     </div>
   );
