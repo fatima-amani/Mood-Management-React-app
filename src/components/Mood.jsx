@@ -11,7 +11,7 @@ export default function Mood({ index, mood, setMoodList, setHistory }) {
     };
 
     return (
-        <div className="flex items-center justify-between border-b-2 pb-4 mb-4 hover:bg-gray-100 transition-all">
+        <div className="flex items-center justify-between pb-4 mb-4 hover:bg-gray-100 transition-all">
             <div className="flex items-center space-x-4">
                 <span className="text-3xl">{moodMap[mood.moodText]}</span>
                 <div>
