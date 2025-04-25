@@ -28,7 +28,6 @@ export default function AddMoodForm({ setList }) {
         <div className="max-w-md mx-auto p-6 bg-white rounded-lg shadow-lg">
             <h3 className="text-2xl font-semibold text-center text-blue-800 mb-6">Add a Mood</h3>
             <form onSubmit={addMood} className="space-y-4">
-                {/* Select Dropdown */}
                 <div>
                     <label htmlFor="moodText" className="block text-lg font-medium text-gray-700 mb-2">
                         Choose Your Mood
@@ -45,8 +44,6 @@ export default function AddMoodForm({ setList }) {
                         <option value="tensed">{moodMap['tensed']}</option>
                     </select>
                 </div>
-
-                {/* Add Mood Button */}
                 <div className="flex justify-center">
                     <button
                         type="submit"
